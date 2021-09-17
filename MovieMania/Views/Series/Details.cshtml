@@ -1,0 +1,50 @@
+﻿@model MovieMania.Models.Serie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Serie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SerieTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerieTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerieDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerieDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cover)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cover)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeasonsNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeasonsNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SerieId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
